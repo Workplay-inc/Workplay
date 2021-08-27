@@ -1,0 +1,109 @@
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@300&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(30, 30, 30);
+  background: linear-gradient(
+    110deg,
+    rgb(19, 19, 19) 79%,
+    rgb(41, 41, 41) 96%
+  );
+  width: 100vw;
+}
+
+#logo {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#heading{
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+  font-family: 'Roboto';
+  font-size: 1.8em;
+  letter-spacing: 0.1ch;
+}
+
+#subtitle{
+  text-align: center;
+  font-family: 'Poppins';
+  color: white;
+  font-weight: lighter;
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+#image{
+  display: block;
+  margin: auto;
+  height: 300px;
+  margin-top: 30px;
+}
+.parts{
+  width: 100vw;
+  height: 100vh;
+}
+
+.second{
+  padding-top: 40px;
+}
+#logo2{
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#image2{
+  display: block;
+  margin: auto;
+  height: 300px;
+  margin-top: 82px;
+}
+
+#hidden-on-mobile{
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .second{
+    display: none;
+  }
+  #logo{
+    float: left;
+    margin-top: 45px;
+    margin-left: 5%;
+    margin-bottom: 100px;
+  }
+  #heading{
+    margin-top: 0px;
+    clear: both;
+    text-align: left;
+    margin-left: 9%;
+  }
+ 
+  #subtitle{
+    clear: both;
+    text-align: left;
+    margin-left: 9%;
+  }
+  #image{
+    position: absolute;
+    right: 40px;
+    top: 20%;
+    height: 400px;
+  }
+  #hidden-on-mobile{
+    display: inline;
+    margin-top: 60px;
+    margin-left: 15%;
+  }
+}
